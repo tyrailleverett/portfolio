@@ -30,7 +30,7 @@ const NavBar = () => {
     <nav
       className={`sticky top-0 z-50 ${
         isScrolled
-          ? "shadow-md backdrop-blur-md border-bottom"
+          ? "shadow-md backdrop-blur-md border-b border-base-200"
           : "shadow-none backdrop-blur-none"
       }`}
     >
