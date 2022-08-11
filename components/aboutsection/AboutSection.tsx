@@ -8,8 +8,8 @@ const AboutSection = () => {
         <p className="px-5 sm:px-0">
           Hello! My name is Tyrail Leverett and I am a Help Desk Specialist
           turned into a Full-Stack Software Engineer. I enjoy programming the
-          Front-End code just as much as I do the Back-End code so I opted to
-          become a Full-Stack Software Engineer.
+          Front-End just as much as I do the Back-End so I opted to become a
+          Full-Stack Software Engineer.
         </p>
         <p className="px-5 sm:px-0">
           Currently, my go-to tech stack for implementing a web application is
