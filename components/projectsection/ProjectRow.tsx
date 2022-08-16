@@ -14,7 +14,7 @@ const ProjectRow = ({ project, index }: any) => {
 
   return (
     <div
-      className={`flex flex-col py-10 lg:py-28 ${
+      className={`flex flex-col py-10 lg:py-20 ${
         index % 2 === 0 ? "sm:flex-row-reverse" : "sm:flex-row"
       } `}
     >
@@ -61,13 +61,23 @@ const ProjectRow = ({ project, index }: any) => {
           index % 2 === 0 ? "justify-start" : "justify-end"
         } flex-1 px-4 py-5 sm:py-0 sm:px-0`}
       >
-        <Image
-          className="transition-all rounded-lg hover:-translate-y-2 sm:w-3/4"
-          src={project.image}
-          width={576}
-          height={372}
-          alt={`${project.title} Website`}
-        />
+        {project.image.includes("videos") ? (
+          <video
+            className="transition-all rounded-lg hover:-translate-y-2 focus:outline-none"
+            autoPlay
+            loop
+            muted
+            src={project.image}
+          ></video>
+        ) : (
+          <Image
+            className="transition-all rounded-lg hover:-translate-y-2 sm:w-3/4"
+            src={project.image}
+            width={576}
+            height={372}
+            alt={`${project.title} Website`}
+          />
+        )}
       </div>
     </div>
   );
