@@ -4,7 +4,6 @@ const skills = [
     technologies: [
       "devicon-html5-plain-wordmark",
       "devicon-css3-plain-wordmark",
-      "devicon-javascript-plain",
       "devicon-react-original-wordmark",
       "devicon-typescript-plain",
       "devicon-tailwindcss-original-wordmark",
